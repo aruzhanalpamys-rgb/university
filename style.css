@@ -179,6 +179,7 @@ body {
   display: none;
   z-index: 1000;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .overlay p {
@@ -225,6 +226,161 @@ h2 {
 }
 .nav-item:hover .dropdown {
   display: block; /* показываем dropdown при hover */
+}
+
+.why {
+  padding: 70px 0;
+  background: #fafafa;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stats div {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.stats strong {
+  font-size: 32px;
+  color: #a41034;
+}
+.audience h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.stats span {
+  display: block;
+  margin-top: 6px;
+  color: #555;
+}
+.audience {
+  padding: 60px 0;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.audience-grid h3 {
+  margin-bottom: 10px;
+}
+.audience-grid div {
+  padding: 25px;
+  border: 1px solid #ddd;
+  background: white;
+}
+.testimonials {
+  padding: 70px 0;
+  background: #f4f4f4;
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+blockquote {
+  background: white;
+  padding: 25px;
+  border-left: 4px solid #a41034;
+  font-style: italic;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experience {
+  padding: 70px 0;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.experience-grid div {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+.gain {
+  background: #fafafa;
+  padding: 70px 0;
+}
+
+.gain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+}
+.gain-grid h2 {
+  margin-bottom: 20px;
+}
+
+.gain-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.experience h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero {
+  position: relative;
+  background-image: url("uni.avif");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  position: relative;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.searchInput {
+  position: absolute;
+  right: 250px;
+  top: 17px;
+  border-radius: 5px;
+  z-index: 9000;
+  padding: 10px;
+  border: none;
+  display: none;
+}
+
+.searchInput.active {
+  display: block;
 }
 @media screen and (max-width: 500px) {
   .nav {

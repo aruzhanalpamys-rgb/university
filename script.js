@@ -25,3 +25,9 @@ navItems.forEach((item) => {
 document.querySelector(".nav").addEventListener("mouseleave", () => {
   dropdown.style.display = "none";
 });
+
+const searchInput = document.querySelector(".searchInput");
+const search = document.querySelector(".search");
+search.addEventListener("click", function () {
+  searchInput.classList.toggle("active");
+});
